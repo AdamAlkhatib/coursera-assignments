@@ -27,7 +27,7 @@ p {
 .navbar-collapse {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
-	background-color: grey;
+	background-color: whitesmoke;
 }
 
 .container-fluid > .navbar-collapse {
@@ -39,7 +39,7 @@ p {
 	color: whitesmoke;
 }
 
-.navbar-default .navbar-collapse {
+.navbar-default {
 	border-color: #151515;
 	border-width: 2px;
 	background-color: whitesmoke;
@@ -48,6 +48,7 @@ p {
 
 ul.nav.navbar-nav.visible-xs {
 	margin-bottom: 0px;
+	margin-top: 0px;
 	background-color: grey;
 }
 .divider {
@@ -73,20 +74,38 @@ ul.nav.navbar-nav.visible-xs {
 	border-width: 1px;
 }
 
-/* Lorem Ipsum stretcher */
-#lorem-ipsum-container {
-	background-color: #30363d;
-	margin-bottom: 50px;
-}
-
-#lorem-ipsum-long {
-	min-height: 1000px;
+/*lorem ipsum large */
+.lorem-ipsum-large {
+	min-height: 110vh;
 	max-height: auto;
+	position: relative;
+	padding-bottom: 100px;
 }
 
+/*lorem ipsum container */
+.lorem-ipsum-div {
+	background-color: grey;
+	border: 20px solid #151515;
+}
+
+/* lorem ipsum link styling */
+.lorem-ipsum-large > a {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 150px;
+	height: 50px;
+	color: lightblue;
+}
+	
+}
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
 	.navbar-default .navbar-collapse {
 	background-color: grey;
+	}
+	.navbar-collapse {
+	background-color: grey;
+	}
 }
